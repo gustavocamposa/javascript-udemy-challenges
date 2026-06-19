@@ -5,6 +5,9 @@ numéricos na ordem que foram inseridos. Por exemplo: calculadora (2, ‘+’, 3
  */
 
 function calculadoraSimples(num1, operacao, num2) {
+     num1 = Number(num1)
+    num2 = Number(num2)
+
     switch (operacao) {
         case '+':
             console.log(`O resultado é: ${num1 + num2}`)
@@ -23,7 +26,7 @@ function calculadoraSimples(num1, operacao, num2) {
     }
 }
 
-calculadoraSimples(2, '+', 3)
+calculadoraSimples('2', '+', '3')
 calculadoraSimples(2, '*', 3)
 calculadoraSimples(3, '-', 2)
 calculadoraSimples(6, '/', 2)
